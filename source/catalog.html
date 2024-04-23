@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -16,8 +17,12 @@
   <header class="main-header">
     <div class="main-header__logo logotype">
       <a class="logotype__link" href="index.html" aria-current="page">
-        <img class="logotype__graphic-logo" src="#" width="33" height="38" alt="Графический логотип Cat Energy">
-        <img class="logotype__text-logo" src="#" width="33" height="38" alt="Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-content-desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/logo-content-tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class=" logotype__graphic-logo" src="images/logo-content-mobile.svg" width="33" height="38" alt="Графический логотип Cat Energy">
+        </picture>
+        <img class="logotype__text-logo" src="images/logo-text.svg" width="101" height="18" alt="Текстовый логотип Cat Energy">
       </a>
     </div>
     <nav class="main-header__main-nav main-nav">
@@ -25,12 +30,12 @@
       <div class="main-nav__wrapper">
         <ul class="nav-list">
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">
+            <a class="nav-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link nav-list__link--current" href="catalog.html">
+            <a class="nav-list__link nav-list__link--current" href="catalog.html" aria-current="page">
               Каталог продукции
             </a>
           </li>
@@ -49,7 +54,13 @@
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__item card">
-            <a class="card__link" href="#"><img class="card__image" src="#" width="68" height="86" alt="Cat Energy PRO 500 г вкус курица"></a>
+            <a class="card__link" href="#">
+              <picture>
+                <source media="(min-width:1440px)" srcset="images/card-chiken-500-desktop@1x.png 1x,images/card-chiken-500-desktop@2x.png 2x" type="image/png" width="169" height="210">
+                <source media="(min-width:768px)" srcset="images/card-chiken-500-tablet@1x.png 1x,images/card-chiken-500-tablet@2x.png 2x" type="image/png" width="200" height="210">
+                <img class="card__image" src="images/card-chiken-500-mobile@1x.png" srcset="images/card-chiken-500-mobile@2x.png 2x" width="68" height="86" alt="Cat Energy PRO 500 г вкус курица">
+              </picture>
+            </a>
             <a class="card__link" href="#">
               <h2 class="card__title">Cat Energy PRO 500 г</h2>
             </a>
@@ -74,7 +85,13 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <a class="card__link" href="#"><img class="card__image" src="#" width="68" height="86" alt="Cat Energy PRO 1000 г вкус курица"></a>
+            <a class="card__link" href="#">
+              <picture>
+                <source media="(min-width:1440px)" srcset="images/card-chiken-1000-desktop@1x.png 1x,images/card-chiken-1000-desktop@2x.png 2x" type="image/png" width="169" height="210">
+                <source media="(min-width:768px)" srcset="images/card-chiken-1000-tablet@1x.png 1x,images/card-chiken-1000-tablet@2x.png 2x" type="image/png" width="200" height="210">
+                <img class="card__image" src="images/card-chiken-1000-mobile@1x.png" srcset="images/card-chiken-1000-mobile@2x.png 2x" width="68" height="86" alt="Cat Energy PRO 1000 г вкус курица">
+              </picture>
+            </a>
             <a class="card__link" href="#">
               <h2 class="card__title">Cat Energy PRO 1000 г</h2>
             </a>
@@ -99,7 +116,13 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <a class="card__link" href="#"><img class="card__image" src="#" width="68" height="86" alt="Cat Energy PRO 500 г вкус рыба"></a>
+            <a class="card__link" href="#">
+              <picture>
+                <source media="(min-width:1440px)" srcset="images/card-fish-500-desktop@1x.png 1x,images/fish-500-desktop@2x.png 2x" type="image/png" width="169" height="210">
+                <source media="(min-width:768px)" srcset="images/card-fish-500-tablet@1x.png 1x,images/card-fish-500-tablet@2x.png 2x" type="image/png" width="200" height="210">
+                <img class="card__image" src="images/card-fish-500-mobile@1x.png" srcset="images/card-fish-500-mobile@2x.png 2x" width="68" height="86" alt="Cat Energy PRO 500 г вкус рыба">
+              </picture>
+            </a>
             <a class="card__link" href="#">
               <h2 class="card__title">Cat Energy PRO 500 г</h2>
             </a>
@@ -124,7 +147,13 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <a class="card__link" href="#"><img class="card__image" src="#" width="68" height="86" alt="Cat Energy PRO 1000 г вкус рыба"></a>
+            <a class="card__link" href="#">
+              <picture>
+                <source media="(min-width:1440px)" srcset="images/card-fish-1000-desktop@1x.png 1x,images/fish-1000-desktop@2x.png 2x" type="image/png" width="169" height="210">
+                <source media="(min-width:768px)" srcset="images/card-fish-1000-tablet@1x.png 1x,images/card-fish-1000-tablet@2x.png 2x" type="image/png" width="200" height="210">
+                <img class="card__image" src="images/card-fish-1000-mobile@1x.png" srcset="images/card-fish-1000-mobile@2x.png 2x" width="68" height="86" alt="Cat Energy PRO 1000 г вкус рыба">
+              </picture>
+            </a>
             <a class="card__link" href="#">
               <h2 class="card__title">Cat Energy PRO 1000 г</h2>
             </a>
@@ -149,7 +178,13 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <a class="card__link" href="#"><img class="card__image" src="#" width="68" height="86" alt="Cat Energy PRO 500 г вкус гречка"></a>
+            <a class="card__link" href="#">
+              <picture>
+                <source media="(min-width:1440px)" srcset="images/card-buckwheat-500-desktop@1x.png 1x,images/card-buckwheat-500-desktop@2x.png 2x" type="image/png" width="169" height="210">
+                <source media="(min-width:768px)" srcset="images/card-buckwheat-500-tablet@1x.png 1x,images/card-buckwheat-500-tablet@2x.png 2x" type="image/png" width="200" height="210">
+                <img class="card__image" src="images/card-buckwheat-500-mobile@1x.png" srcset="images/card-buckwheat-500-mobile@2x.png 2x" width="68" height="86" alt="Cat Energy PRO 500 г вкус гречка">
+              </picture>
+            </a>
             <a class="card__link" href="#">
               <h2 class="card__title">Cat Energy Slim 500 г</h2>
             </a>
@@ -174,7 +209,13 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <a class="card__link" href="#"><img class="card__image" src="#" width="68" height="86" alt="Cat Energy PRO 1000 г вкус гречка"></a>
+            <a class="card__link" href="#">
+              <picture>
+                <source media="(min-width:1440px)" srcset="images/card-buckwheat-1000-desktop@1x.png 1x,images/card-buckwheat-1000-desktop@2x.png 2x" type="image/png" width="169" height="210">
+                <source media="(min-width:768px)" srcset="images/card-buckwheat-1000-tablet@1x.png 1x,images/card-buckwheat-1000-tablet@2x.png 2x" type="image/png" width="200" height="210">
+                <img class="card__image" src="images/card-buckwheat-1000-mobile@1x.png" srcset="images/card-buckwheat-1000-mobile@2x.png 2x" width="68" height="86" alt="Cat Energy PRO 1000 г вкус гречка">
+              </picture>
+            </a>
             <a class="card__link" href="#">
               <h2 class="card__title">Cat Energy Slim 1000 г</h2>
             </a>
@@ -199,7 +240,13 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <a class="card__link" href="#"><img class="card__image" src="#" width="68" height="86" alt="Cat Energy Slim 500 г вкус рис"></a>
+            <a class="card__link" href="#">
+              <picture>
+                <source media="(min-width:1440px)" srcset="images/card-rice-500-desktop@1x.png 1x,images/card-rice-500-desktop@2x.png 2x" type="image/png" width="169" height="210">
+                <source media="(min-width:768px)" srcset="images/card-rice-500-tablet@1x.png 1x,images/card-rice-500-tablet@2x.png 2x" type="image/png" width="200" height="210">
+                <img class="card__image" src="images/card-rice-500-mobile@1x.png" srcset="images/card-rice-500-mobile@2x.png 2x" width="68" height="86" alt="Cat Energy PRO 500 г вкус рис">
+              </picture>
+            </a>
             <a class="card__link" href="#">
               <h2 class="card__title">Cat Energy Slim 500 г</h2>
             </a>
@@ -305,6 +352,11 @@
     </section>
     <section class="office-location-map">
       <div class="office-location-map__wrapper">
+        <picture>
+          <source media="(min-width:1440px)" srcset="images/office-location-map-desktop@1x.jpg 1x,images/office-location-map-desktop@2x.jpg 2x" type="image/jpg" width="1440" height="400">
+          <source media="(min-width:768px)" srcset="images/office-location-map-tablet@1x.jpg 1x,images/office-location-map-tablet@2x.jpg 2x" type="image/jpg" width="768" height="400">
+          <img src="images/office-location-map-mobile@1x.jpg" srcset="images/office-location-map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта с расположением офиса Cat Energy">
+        </picture>
         <h3 class="office-location-map__title">Приглашаем к сотрудничеству дилеров!</h3>
         <p class="office-location-map__description-adress">ул. Большая
           Конюшенная, д. 19/8</p>
