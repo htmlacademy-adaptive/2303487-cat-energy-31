@@ -1,0 +1,20 @@
+.parametres-list__item {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.parametres-list__item--value {
+  font-family: $primary-font;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.parametres-list__expenses {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+}

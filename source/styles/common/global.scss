@@ -1,1 +1,20 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-color-text;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
