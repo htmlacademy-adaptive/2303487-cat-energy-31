@@ -1,5 +1,8 @@
 .example {
-  background-color: $bg-basic-gray;
+  background-color: $bg-basic-grey;
+  padding: 0 20px;
+  min-width: 280px;
+  margin: 0 auto;
 }
 
 .example__title {
@@ -7,12 +10,12 @@
   font-size: 36px;
   line-height: 40px;
   color: $title-color;
-  background-color: #ffffff;
 }
 
 .example__description {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
-  color: $base-color-text-gray;
+  color: $base-color-text-grey;
+  margin: 0;
 }

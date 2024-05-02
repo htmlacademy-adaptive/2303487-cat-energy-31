@@ -1,3 +1,8 @@
+.programs-list {
+  padding: 0;
+  margin: 0;
+}
+
 .programs-list__title {
   font-family: $primary-font;
   font-size: 24px;
@@ -6,7 +11,12 @@
 }
 
 .programs-list__item {
-  background-color: $bg-basic-gray;
+  background-color: $bg-basic-grey;
+  padding: 30px 33px 18px 20px;
+}
+
+.programs-list__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .programs-list__description {
@@ -14,6 +24,7 @@
   font-size: 14px;
   line-height: 18px;
   color: rgba(0, 0, 0, 1);
+  margin: 0;
 }
 
 .programs-list__link {
@@ -22,3 +33,4 @@
   line-height: 16px;
   text-transform: uppercase;
 }
+

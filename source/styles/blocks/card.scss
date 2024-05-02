@@ -4,6 +4,7 @@
   line-height: 20px;
   color: $card-title-color;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .card__list-item-label,
@@ -12,4 +13,10 @@
   font-size: 12px;
   line-height: 16px;
   color: $base-color-text;
+  margin: 0;
+}
+
+.card__button--secondary {
+  background-color: rgba(242, 242, 242, 1);
+  color: $base-color-text-grey;
 }

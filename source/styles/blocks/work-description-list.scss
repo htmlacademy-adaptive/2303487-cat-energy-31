@@ -1,6 +1,12 @@
+.work-description-list {
+  padding: 0;
+  margin: 0;
+}
+
 .work-description-list__item {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
-  color: $base-color-text-gray;
+  color: $base-color-text-grey;
+  /* position: relative; */
 }
