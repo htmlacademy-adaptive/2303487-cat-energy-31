@@ -7,9 +7,12 @@
 
 .example__title {
   font-family: $primary-font;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $title-color;
+  padding: 25px 85px 40px 0;
+  margin: 0;
 }
 
 .example__description {

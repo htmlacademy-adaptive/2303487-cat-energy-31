@@ -1,6 +1,39 @@
+.developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .developer__link {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
-  color: $base-color-text-grey;
+  color: $base-color-text;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: #666666;
+    min-width: 27px;
+    min-height: 34px;
+    mask-image: url("../../icons/stack.svg#logo-html-academy");
+    mask-size: 27px 34px;
+    mask-repeat: no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      background-color: $bg-basic-green;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background-color: $bg-basic-green;
+    }
+  }
 }

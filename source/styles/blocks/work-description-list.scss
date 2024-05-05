@@ -1,6 +1,10 @@
 .work-description-list {
   padding: 0;
   margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .work-description-list__item {
@@ -8,5 +12,48 @@
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text-grey;
-  /* position: relative; */
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    flex-shrink: 0;
+
+    background-color: #68b738;
+  }
+}
+
+.work-description-list__item:last-child {
+  padding-bottom: 49px;
+}
+
+.work-description-list__item--nutrition::before {
+  background-image: url("../../icons/stack.svg#work-description-leaf-icon");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 32px;
+}
+
+.work-description-list__item--powder::before {
+  background-image: url("../../icons/stack.svg#work-description-powder-icon");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 29px;
+}
+
+.work-description-list__item--change::before {
+  background-image: url("../../icons/stack.svg#work-description-cooking-icon");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 30px;
+}
+
+.work-description-list__item--result::before {
+  background-image: url("../../icons/stack.svg#work-description-clock-icon");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 27px 31px;
 }

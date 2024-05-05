@@ -1,0 +1,27 @@
+.logotype {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+
+.logotype__graphic-logo,
+.logotype__text-logo {
+  display: block;
+}
+
+.logotype__link {
+  display: block;
+  margin: 0;
+  padding: 0;
+}

@@ -1,10 +1,24 @@
+.card {
+  border-bottom: 1px solid #ebebeb;
+
+  &:first-child {
+    border-top: 1px solid #ebebeb;
+  }
+}
+
 .card__title {
   font-family: $primary-font;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: $card-title-color;
   text-transform: uppercase;
   margin: 0;
+}
+
+.card__list {
+  padding: 0;
+  list-style-type: none;
 }
 
 .card__list-item-label,
@@ -16,7 +30,48 @@
   margin: 0;
 }
 
+.card__button {
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 25px;
+}
+
 .card__button--secondary {
   background-color: rgba(242, 242, 242, 1);
   color: $base-color-text-grey;
+}
+
+.card__link {
+  display: block;
+}
+
+.card__description {
+  font-family: $secondary-font;
+  color: $base-color-text;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+
+.card__title-more {
+  text-align: center;
+  color: #111111;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 23px;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#card-plus");
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    margin: auto;
+    margin-bottom: 48px;
+    margin-top: 58px;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+  }
 }

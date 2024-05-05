@@ -1,17 +1,49 @@
-.programs-list {
-  padding: 0;
-  margin: 0;
-}
-
-.programs-list__title {
+.programs-list__title-slim {
   font-family: $primary-font;
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 29px;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #68b738;
+    background-image: url("../../icons/stack.svg#programs-list-icon-slim");
+  }
+}
+
+.programs-list__title-pro {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 29px;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #68b738;
+    background-image: url("../../icons/stack.svg#programs-list-icon-pro");
+  }
 }
 
 .programs-list__item {
-  background-color: $bg-basic-grey;
+  background-color: #f2f2f2;
   padding: 30px 33px 18px 20px;
 }
 
@@ -23,13 +55,28 @@
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
-  color: rgba(0, 0, 0, 1);
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+  color: $base-color-text-grey;
 }
 
 .programs-list__link {
   font-family: $primary-font;
+  color: #000000;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 12px;
+    background-color: #000000;
+    mask-image: url("../../icons/stack.svg#icon-right-arrow");
+    mask-repeat: no-repeat;
+    mask-position: left center;
+  }
 }
