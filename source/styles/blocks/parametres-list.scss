@@ -2,11 +2,14 @@
   margin: 0;
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 32px;
   flex-wrap: wrap;
   margin-bottom: 34px;
   padding: 0;
+
+  align-items: center;
+
 
   @media (min-width: $tablet-width) {
     gap: 43px;
@@ -26,10 +29,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 124px;
   min-height: 56px;
   border: 1px solid #cdcdcd;
-  border-radius: 3px;
+  border-bottom: none;
+  border-radius: 4px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -47,6 +51,7 @@
   margin: 0;
   margin-bottom: 8px;
   margin-top: 9px;
+  border: none;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 11px;
@@ -55,9 +60,20 @@
   }
 }
 
-.parametres-list__expenses {
+.parametres-list__item--expenses {
   font-family: $primary-font;
   font-size: 14px;
   line-height: 20px;
   color: #000000;
+  text-transform: uppercase;
+  border: none;
+  display: inline-block;
+}
+
+.parametres-list__item--value-expenses {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
 }
