@@ -5,12 +5,17 @@
   justify-content: center;
   text-decoration: none;
 
+
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 94px;
   }
 }
 
@@ -21,7 +26,12 @@
 }
 
 .logotype__link {
-  display: block;
-  margin: 0;
-  padding: 0;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

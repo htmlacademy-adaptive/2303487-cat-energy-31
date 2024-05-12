@@ -16,4 +16,12 @@
 .catalog-extra-products-list__button {
   margin: 0;
   margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 623px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 234px;
+  }
 }

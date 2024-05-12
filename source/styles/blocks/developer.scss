@@ -1,39 +1,38 @@
 .developer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.developer__link {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   color: $base-color-text;
-  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 140px;
 
-  &::after {
-    content: "";
-    display: block;
-    background-color: #666666;
-    min-width: 27px;
-    min-height: 34px;
-    mask-image: url("../../icons/stack.svg#logo-html-academy");
-    mask-size: 27px 34px;
-    mask-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    gap: 23px;
   }
+}
 
-  &:active {
-    opacity: 0.3;
+.developer__icon::after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#logo-html-academy");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
 
-    &::after {
-      background-color: $bg-basic-green;
-    }
-  }
+.developer__icon:hover::after {
+  background-color: $bg-basic-green;
+}
 
-  &:hover,
-  &:focus {
-    &::after {
-      background-color: $bg-basic-green;
-    }
-  }
+.developer__icon:hover:focus-visible {
+  background-color: $bg-basic-green;
+}
+
+.developer__icon:active {
+  opacity: 0.3;
 }

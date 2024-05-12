@@ -17,6 +17,10 @@
     border-width: 2px;
     border-color: #444444;
   }
+
+  @media (min-width: $tablet-width) {
+    min-width: 376px;
+  }
 }
 
 .form__button {
@@ -24,4 +28,8 @@
   line-height: 26px;
   padding: 15px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+  }
 }
