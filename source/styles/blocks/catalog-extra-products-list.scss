@@ -1,0 +1,27 @@
+.catalog-extra-products-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+
+.catalog-extra-products-list__title {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.catalog-extra-products-list__button {
+  margin: 0;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 623px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 234px;
+  }
+}
