@@ -8,11 +8,11 @@
   padding: 26px 20px;
   background-color: #ffffff;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
+    background-color: #f2f2f2;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,6 +22,7 @@
     min-height: 199px;
     left: 110px;
     top: 95px;
+    background-color: #ffffff;
   }
 }
 
@@ -32,7 +33,7 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
-  color: $base-color-text;
+  color: $title-color;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -41,19 +42,16 @@
   }
 }
 
+.office-location-map__description {
+  text-align: right;
+}
+
 .office-location-map__description-adress {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   width: 140px;
   text-align: right;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    width: 157px;
-    min-height: 80px;
-  }
 }
 
 .office-location-map__description-city {
@@ -64,4 +62,8 @@
   @media (min-width: $tablet-width) {
     margin-top: auto;
   }
+}
+
+.office-location-map__picture {
+  width: 100%;
 }

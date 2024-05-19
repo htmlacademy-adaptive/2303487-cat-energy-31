@@ -20,3 +20,10 @@
 .main-container__subscribe-form {
   padding: 40px 20px;
 }
+
+.main-container--catalog {
+  @media (width >= 1440px) {
+
+    padding-top: 188px;
+  }
+}

@@ -1,3 +1,17 @@
+.form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 632px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 752px;
+  }
+}
+
 .form__input {
   font-family: $primary-font;
   font-size: 20px;
@@ -5,9 +19,9 @@
   text-transform: uppercase;
   color: $base-color-text;
   padding: 13px;
-  margin-bottom: 16px;
   border: 1px solid #cdcdcd;
   min-width: 280px;
+  margin-bottom: 24px;
 
   &:hover {
     border-color: #cdcdcd;
@@ -20,6 +34,12 @@
 
   @media (min-width: $tablet-width) {
     min-width: 376px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 496px;
+    margin-bottom: 0;
   }
 }
 
@@ -28,8 +48,13 @@
   line-height: 26px;
   padding: 15px;
   margin: 0;
+  min-width: 280px;
 
   @media (min-width: $tablet-width) {
     min-width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }

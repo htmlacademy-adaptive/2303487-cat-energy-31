@@ -24,14 +24,3 @@
 .logotype__text-logo {
   display: block;
 }
-
-.logotype__link {
-  flex-flow: wrap;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-}

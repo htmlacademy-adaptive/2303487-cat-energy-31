@@ -1,12 +1,22 @@
 .main-header {
   font-family: $primary-font;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 25px 30px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+    min-width: 1220px;
+    padding: 55px 0 0;
+    position: absolute;
+    top: 0;
+    left: 110px;
   }
 }
 

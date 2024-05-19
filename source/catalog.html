@@ -48,7 +48,7 @@
       </div>
     </nav>
   </header>
-  <main class="main-container">
+  <main class="main-container main-container--catalog">
     <section class="catalog">
       <div class="catalog__wrapper">
         <h1 class="catalog__title">Каталог продукции</h1>
@@ -144,7 +144,7 @@
                 </tbody>
               </table>
             </div>
-            <a class="catalog__link button button--primary" href="#">Заказать</a>
+            <a class="button card__button" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
             <a class="card__link-image" href="#">
@@ -282,87 +282,89 @@
     </section>
     <section class="catalog-extra-products">
       <h2 class="catalog-extra-products__title">Дополнительные товары</h2>
-      <ul class="catalog-extra-products__list catalog-extra-products-list">
-        <li class="catalog-extra-products-list__item">
-          <h3 class="catalog-extra-products-list__title">Сахарозаменитель</h3>
-          <p class="catalog-extra-products-list__description description">
-            <span class="description__label">1 упаковка (100 г)</span>
-            <span class="description__value">200 ₽</span>
-          </p>
-          <div class="catalog-extra-products-list__button-wrapper">
-            <button class="button catalog-extra-products-list__button" type="button">
-              Заказать
-            </button>
-          </div>
-        </li>
-        <li class="catalog-extra-products-list__item">
-          <h3 class="catalog-extra-products-list__title">Питьевая вода</h3>
-          <p class="catalog-extra-products-list__description description">
-            <span class="description__label">5 литров</span>
-            <span class="description__value">50 ₽</span>
-          </p>
-          <div class="catalog-extra-products-list__button-wrapper">
-            <button class="button catalog-extra-products-list__button" type="button">
-              Заказать
-            </button>
-          </div>
-        </li>
-        <li class="catalog-extra-products-list__item">
-          <h3 class="catalog-extra-products-list__title">Молоко</h3>
-          <p class="catalog-extra-products-list__description description">
-            <span class="description__label">1 литр</span>
-            <span class="description__value">100 ₽</span>
-          </p>
-          <div class="catalog-extra-products-list__button-wrapper">
-            <button class="button catalog-extra-products-list__button" type="button">
-              Заказать
-            </button>
-          </div>
-        </li>
-        <li class="catalog-extra-products-list__item">
-          <h3 class="catalog-extra-products-list__title">Витамины</h3>
-          <p class="catalog-extra-products-list__description description">
-            <span class="description__label">1 упаковка (30 г)</span>
-            <span class="description__value">300 ₽</span>
-          </p>
-          <div class="catalog-extra-products-list__button-wrapper">
-            <button class="button catalog-extra-products-list__button" type="button">
-              Заказать
-            </button>
-          </div>
-        </li>
-      </ul>
-      <div class="catalog-extra-products__offer offer">
-        <p class="offer__description">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="catalog-extra-products__wrapper">
+        <ul class="catalog-extra-products__list catalog-extra-products-list">
+          <li class="catalog-extra-products-list__item">
+            <h3 class="catalog-extra-products-list__title">Сахарозаменитель</h3>
+            <p class="catalog-extra-products-list__description description">
+              <span class="description__label">1 упаковка (100 г)</span>
+              <span class="description__value">200 ₽</span>
+            </p>
+            <div class="catalog-extra-products-list__button-wrapper">
+              <button class="button catalog-extra-products-list__button" type="button">
+                Заказать
+              </button>
+            </div>
+          </li>
+          <li class="catalog-extra-products-list__item">
+            <h3 class="catalog-extra-products-list__title">Питьевая вода</h3>
+            <p class="catalog-extra-products-list__description description">
+              <span class="description__label">5 литров</span>
+              <span class="description__value">50 ₽</span>
+            </p>
+            <div class="catalog-extra-products-list__button-wrapper">
+              <button class="button catalog-extra-products-list__button" type="button">
+                Заказать
+              </button>
+            </div>
+          </li>
+          <li class="catalog-extra-products-list__item">
+            <h3 class="catalog-extra-products-list__title">Молоко</h3>
+            <p class="catalog-extra-products-list__description description">
+              <span class="description__label">1 литр</span>
+              <span class="description__value">100 ₽</span>
+            </p>
+            <div class="catalog-extra-products-list__button-wrapper">
+              <button class="button catalog-extra-products-list__button" type="button">
+                Заказать
+              </button>
+            </div>
+          </li>
+          <li class="catalog-extra-products-list__item">
+            <h3 class="catalog-extra-products-list__title">Витамины</h3>
+            <p class="catalog-extra-products-list__description description">
+              <span class="description__label">1 упаковка (30 г)</span>
+              <span class="description__value">300 ₽</span>
+            </p>
+            <div class="catalog-extra-products-list__button-wrapper">
+              <button class="button catalog-extra-products-list__button" type="button">
+                Заказать
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="catalog-extra-products__offer offer">
+          <p class="offer__description">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
     <section class="subscribe-form">
       <h2 class="subscribe-form__title">Акции и новинки</h2>
-      <p class="subscribe-form__description">Подпишитесь на наши новости и не пропустите ни одного предложения!
-      </p>
-      <form class="subscribe-form__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="email">Ваш e-mail</label>
-        <input class="form__input" type="email" id="email" name="user-email" placeholder="кuklachev@gmail.com" required>
-        <button class="button form__button" type="submit">Подписаться</button>
-      </form>
+      <div class="subscribe-form__wrapper">
+        <p class="subscribe-form__description">Подпишитесь на наши новости и не пропустите ни одного предложения!
+        </p>
+        <form class="subscribe-form__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="email">Ваш e-mail</label>
+          <input class="form__input" type="email" id="email" name="user-email" placeholder="кuklachev@gmail.com" required>
+          <button class="button form__button" type="submit">Подписаться</button>
+        </form>
+      </div>
     </section>
     <section class="office-location-map">
       <div class="office-location-map__wrapper">
         <h3 class="office-location-map__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="office-location-map__description-adress">ул. Большая
-          Конюшенная, д. 19/8</p>
-        <p class="office-location-map__description-city">Санкт-Петербург</p>
+        <div class="office-location-map__description">
+          <p class="office-location-map__description-adress">ул. Большая
+            Конюшенная, д. 19/8</p>
+          <p class="office-location-map__description-city">Санкт-Петербург</p>
+        </div>
       </div>
-      <picture>
-        <source media="(min-width:1440px)" srcset="images/office-location-map-desktop@1x.jpg 1x,images/office-location-map-desktop@2x.jpg 2x" type="image/jpg" width="1440" height="400">
-        <source media="(min-width:768px)" srcset="images/office-location-map-tablet@1x.jpg 1x,images/office-location-map-tablet@2x.jpg 2x" type="image/jpg" width="768" height="400">
-        <img src="images/office-location-map-mobile@1x.jpg" srcset="images/office-location-map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта с расположением офиса Cat Energy">
-      </picture>
+      <iframe class="office-location-map__picture" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197707!2d30.32047247659853!3d59.93871916209436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1715095886022!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта с расположением офиса Cat Energy"></iframe>
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__logotype logotype logotype__link" href="#">
-      <img class="logotype__text-logo" src="images/logo-text.svg" width="128" height="24" alt="Текстовый логотип Cat Energy">
+    <a class="main-footer__logotype main-footer__logotype-link" href="#">
+      <img class="main-footer__logotype-text-logo" src="images/logo-text.svg" width="128" height="24" alt="Текстовый логотип Cat Energy">
     </a>
     <ul class="main-footer__socials socials-list">
       <li class="socials-list__item">

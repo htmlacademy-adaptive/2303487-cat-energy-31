@@ -18,3 +18,19 @@
 .main-footer__logotype {
   align-self: center;
 }
+
+
+.main-footer__logotype-link {
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.main-footer__logotype-text-logo {
+  display: block;
+}
