@@ -155,7 +155,7 @@
 .card__button {
   margin: 0;
   margin-bottom: 20px;
-  min-width: 280px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
