@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 10px 37px 40px;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: stretch;
     min-height: 511px;
     width: 324px;
@@ -14,11 +14,13 @@
     background-image: linear-gradient(to bottom, #ffffff 16%, #ffffff 16%, #f2f2f2 16%);
     box-sizing: border-box;
     align-items: center;
+    flex-wrap: nowrap;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 38px 40px;
     width: 245px;
+    flex-wrap: nowrap;
   }
 }
 
