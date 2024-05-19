@@ -1,0 +1,68 @@
+.offer {
+  background-color: $bg-basic-green;
+  background-image:
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, rgba(104, 183, 56, 0.85) 302px),
+    image-set(
+      url("../../images/offer-background-desktop@2x.png") 2x type("image/png"),
+      url("../../images/offer-background-mobile@1x.png") 1x type("image/png"));
+  background-repeat: no-repeat;
+  background-size: cover, auto;
+  padding: 60px 59px 43px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 110px 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: stretch;
+    max-width: 245px;
+    padding: 56px 42px 43px;
+  }
+}
+
+.offer__description {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  position: relative;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 47px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    flex-flow: row;
+    gap: 240px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    flex-direction: column;
+    gap: 46px;
+  }
+}
+
+.offer__description::before {
+  background-image: url("../../icons/stack.svg#icon-gift");
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: auto;
+    height: 83px;
+  }
+}

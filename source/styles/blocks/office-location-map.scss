@@ -1,0 +1,69 @@
+.office-location-map {
+  background-color: $bg-basic-grey;
+  margin: 0 auto;
+  position: relative;
+}
+
+.office-location-map__wrapper {
+  padding: 26px 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 78px 60px 80px;
+    position: absolute;
+    width: 565px;
+    min-height: 199px;
+    left: 110px;
+    top: 95px;
+    background-color: #ffffff;
+  }
+}
+
+.office-location-map__title {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+  }
+}
+
+.office-location-map__description {
+  text-align: right;
+}
+
+.office-location-map__description-adress {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  width: 140px;
+  text-align: right;
+}
+
+.office-location-map__description-city {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
+}
+
+.office-location-map__picture {
+  width: 100%;
+}
