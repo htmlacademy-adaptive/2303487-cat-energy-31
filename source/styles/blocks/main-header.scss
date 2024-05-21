@@ -6,17 +6,26 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 30px;
+    padding: 55px 30px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     z-index: 1;
-    min-width: 1220px;
-    padding: 55px 0 0;
-    position: absolute;
-    top: 0;
-    left: 110px;
+    background-image: linear-gradient(90deg, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%);
+    max-width: none;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  &--catalog {
+    @media (min-width: $desktop-width) {
+      z-index: 1;
+      background-image: none;
+      max-width: none;
+      padding-left: 110px;
+      padding-right: 110px;
+    }
   }
 }
 
@@ -76,6 +85,14 @@
     mask-position: center;
     mask-size: 24px 24px;
   }
+}
+
+.main-header__toggle:hover::before {
+  opacity: 0.8;
+}
+
+.main-header__toggle:hover::after {
+  opacity: 0.6;
 }
 
 .main-header__toggle--close {

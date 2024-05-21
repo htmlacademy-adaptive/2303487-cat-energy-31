@@ -19,13 +19,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 200px;
-    margin: 70px 0 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     align-self: stretch;
     max-width: 245px;
     padding: 56px 42px 43px;
+    background-image:
+      linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, rgba(104, 183, 56, 0.85) 302px),
+      image-set(
+        url("../../images/offer-background-desktop@2x.png") 2x type("image/png"),
+        url("../../images/offer-background-desktop@1x.png") 1x type("image/png"));
   }
 }
 

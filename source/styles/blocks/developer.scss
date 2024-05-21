@@ -29,10 +29,10 @@
   background-color: $bg-basic-green;
 }
 
-.developer__icon:hover:focus-visible {
+.developer__icon:focus-visible::after {
   background-color: $bg-basic-green;
 }
 
-.developer__icon:active {
+.developer__icon:active::after {
   opacity: 0.3;
 }

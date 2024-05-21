@@ -37,6 +37,19 @@
   }
 }
 
+.socials-list__link:hover::before {
+  background-color: $bg-basic-green;
+}
+
+.socials-list__link:active::before {
+  background-color: $bg-basic-green;
+  opacity: 0.3;
+}
+
+.socials-list__link:focus-visible::before {
+  background-color: $bg-basic-green;
+}
+
 .socials-list__link--telegram {
   &::before {
     mask-image: url("../../icons/stack.svg#socials-tg");

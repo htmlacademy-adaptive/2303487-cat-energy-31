@@ -20,7 +20,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text-grey;
-  display: grid;
+  display: flex;
   position: relative;
   align-items: center;
   gap: 20px;
@@ -28,6 +28,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 249px;
     gap: 31px;
+    display: grid;
   }
 }
 

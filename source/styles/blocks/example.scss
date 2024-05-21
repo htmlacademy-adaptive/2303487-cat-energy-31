@@ -58,7 +58,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
   margin-bottom: 20px;
 
@@ -136,8 +136,4 @@
     line-height: 20px;
     color: $title-color;
   }
-}
-
-.example__slider {
-  position: relative;
 }

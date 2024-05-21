@@ -170,3 +170,8 @@
   background-color: rgba(242, 242, 242, 1);
   color: $base-color-text-grey;
 }
+
+.card__button--secondary:hover,
+.card__button--secondary:active {
+  background-color: #ebebeb;
+}
