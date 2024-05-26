@@ -1,7 +1,11 @@
 .office-location-map {
-  background-color: $bg-basic-grey;
+  background-color: #ffffff;
   margin: 0 auto;
   position: relative;
+}
+
+.office-location-map--catalog {
+  background-color: $bg-basic-grey;
 }
 
 .office-location-map__wrapper {
@@ -11,7 +15,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 58px 70px;
     background-color: #f2f2f2;
   }
 
@@ -43,7 +47,10 @@
 }
 
 .office-location-map__description {
-  text-align: right;
+  @media (min-width: $tablet-width) {
+    width: 157px;
+    font-family: $secondary-font;
+  }
 }
 
 .office-location-map__description-adress {
@@ -51,20 +58,34 @@
   font-size: 14px;
   line-height: 20px;
   width: 140px;
-  text-align: right;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
 }
 
 .office-location-map__description-city {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
   }
 }
 
 .office-location-map__picture {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

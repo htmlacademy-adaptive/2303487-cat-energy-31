@@ -10,7 +10,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
-    row-gap: 37px;
+    row-gap: 94px;
     counter-reset: list 0;
   }
 }
@@ -29,6 +29,9 @@
     grid-template-columns: 249px;
     gap: 31px;
     display: grid;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -3px;
   }
 }
 
@@ -37,7 +40,6 @@
   display: block;
   width: 60px;
   height: 60px;
-  margin-right: 20px;
   flex-shrink: 0;
   background-color: #68b738;
 
@@ -88,10 +90,10 @@
     position: absolute;
     font-size: 280px;
     line-height: 280px;
-    font-family: $secondary-font;
+    font-family: $primary-font;
     color: #f2f2f2;
     z-index: -1;
-    right: -10px;
+    left: 114px;
     top: 0;
   }
 }

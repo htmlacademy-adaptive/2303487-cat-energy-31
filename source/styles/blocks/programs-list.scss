@@ -1,5 +1,3 @@
-
-
 .programs-list {
   display: flex;
   flex-direction: column;
@@ -33,22 +31,21 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 340px;
-    padding: 77px 63px 53px 52px;
+    padding: 77px 63px 40px 61px;
     width: 708px;
     min-height: 372px;
+    background-color: rgba(242, 242, 242, 1);
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
     width: 570px;
-    padding: 77px 61px 55px 52px;
+    padding: 86px 61px 55px 52px;
   }
 }
 
 
 .programs-list__item:not(:last-child) {
-  margin-bottom: 20px;
-
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
@@ -59,10 +56,20 @@
   font-size: 14px;
   line-height: 18px;
   margin-top: 0;
-  margin-bottom: 15px;
-  padding-bottom: 23px;
+  margin-bottom: 22px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #d9d9d9;
   color: $base-color-text-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .programs-list__link {
@@ -100,6 +107,18 @@
       transform-origin: left center;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.programs-list__link::after {
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 }
 
 .programs-list__title {
@@ -114,7 +133,7 @@
   justify-content: flex-start;
   gap: 20px;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 25px;
   margin-left: 70px;
   position: relative;
 
@@ -123,7 +142,7 @@
     position: relative;
 
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 0;
     margin-left: 0;
 
     font-size: 36px;
@@ -131,7 +150,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 73px;
+    margin-bottom: 60px;
     margin-left: 162px;
   }
 }
@@ -145,14 +164,14 @@
   display: block;
   background: $bg-basic-green;
   position: absolute;
-  top: 24px;
-  left: 24px;
+  top: 23px;
+  left: 19px;
 
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
-    top: 92px;
-    left: 450px;
+    top: 93px;
+    left: 455px;
   }
 
   @media (min-width: $desktop-width) {
@@ -160,14 +179,13 @@
 
     width: 100px;
     height: 100px;
-    top: 47px;
+    top: 55px;
     left: 52px;
     right: auto;
   }
 }
 
 .programs-list__item--slim::after {
-
   content: "";
   display: block;
   width: 36px;
@@ -185,7 +203,7 @@
     width: 140px;
     height: 194px;
     top: 81px;
-    right: 93px;
+    right: 83px;
     left: auto;
   }
 
@@ -205,14 +223,14 @@
   display: block;
   background: $bg-basic-green;
   position: absolute;
-  top: 24px;
-  left: 24px;
+  top: 23px;
+  left: 20px;
 
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
-    top: 92px;
-    left: 450px;
+    top: 93px;
+    left: 455px;
   }
 
   @media (min-width: $desktop-width) {
@@ -220,7 +238,7 @@
 
     width: 100px;
     height: 100px;
-    top: 47px;
+    top: 55px;
     left: 52px;
     right: auto;
   }
@@ -244,7 +262,7 @@
     width: 268px;
     height: 112px;
     top: 135px;
-    right: 29px;
+    right: 19px;
     left: auto;
   }
 

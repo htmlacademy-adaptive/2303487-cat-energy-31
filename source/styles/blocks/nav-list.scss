@@ -3,6 +3,8 @@
   list-style-type: none;
   text-align: center;
   min-width: 320px;
+  width: 100%;
+  margin-bottom: 0;
 
 
   @media (min-width: $tablet-width) {
@@ -10,6 +12,21 @@
     margin: 0;
     min-width: 436px;
     flex-wrap: wrap;
+    gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    margin-top: 25px;
+  }
+}
+
+.nav-list:last-child {
+  @media (min-width: $tablet-width) {
+    margin-right: 34px;
   }
 }
 
@@ -21,13 +38,12 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin-right: 33px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
-    margin-right: 33px;
+    margin: auto;
     padding: 0;
   }
 }
