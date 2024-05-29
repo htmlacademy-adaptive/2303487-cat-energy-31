@@ -1,55 +1,83 @@
 .office-location-map {
-  background-color: #ffffff;
-  margin: 0 auto;
-  position: relative;
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 95px auto auto;
+    grid-template-columns: auto 565px 90px 565px auto;
+    display: grid;
+  }
 }
 
 .office-location-map--catalog {
   background-color: $bg-basic-grey;
-}
-
-.office-location-map__wrapper {
-  padding: 26px 20px;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    padding: 58px 70px;
-    background-color: #f2f2f2;
-  }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 78px 60px 80px;
-    position: absolute;
-    width: 565px;
-    min-height: 199px;
-    left: 110px;
-    top: 95px;
     background-color: #ffffff;
   }
 }
 
+.office-location-map__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 320px;
+  margin: 0 auto;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 60px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 2 / 2 / 3 / 3;
+    width: 565px;
+    min-height: 199px;
+    background-color: #ffffff;
+    padding: 60px 80px 60px 78px;
+    z-index: 2;
+  }
+}
+
 .office-location-map__title {
+  display: block;
+  margin: 0;
+  width: 140px;
+  color: #111111;
+  text-transform: uppercase;
   font-family: $primary-font;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  margin: 0;
-  color: $title-color;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
-    width: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 140px;
   }
 }
 
 .office-location-map__description {
+  display: block;
+  width: 140px;
+  line-height: 20px;
+  margin: 0;
+
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: end;
     width: 157px;
-    font-family: $secondary-font;
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    min-width: 140px;
   }
 }
 
@@ -65,6 +93,11 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    width: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
   }
 }
 
@@ -80,12 +113,67 @@
     line-height: 20px;
     text-align: right;
   }
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
 }
 
-.office-location-map__picture {
+
+.office-location-map__widget {
+  margin: 0;
+  padding: 0;
+  display: block;
+  border: 0;
   width: 100%;
+  height: 362px;
 
   @media (min-width: $tablet-width) {
     height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    min-height: 400px;
+  }
+}
+
+.office-location-map__picture {
+  min-width: 320px;
+  min-height: 362px;
+  background-image:
+    image-set(
+      url("../../images/office-location-map-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/office-location-map-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/office-location-map-mobile@2x.jpg") type("image/jpeg") 2x,
+      url("../../images/office-location-map-mobile@1x.jpg") type("image/jpeg") 1x
+    );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    min-height: 400px;
+    background-image:
+      image-set(
+        url("../../images/office-location-map-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/office-location-map-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/office-location-map-tablet@2x.jpg") type("image/jpeg") 2x,
+        url("../../images/office-location-map-tablet@1x.jpg") type("image/jpeg") 1x
+      );
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1 / 1 / 6 / 6;
+    min-width: 1440px;
+    background-image:
+      image-set(
+        url("../../images/office-location-map-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/office-location-map-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/office-location-map-desktop@2x.jpg") type("image/jpeg") 2x,
+        url("../../images/office-location-map-desktop@1x.jpg") type("image/jpeg") 1x
+      );
   }
 }

@@ -1,10 +1,14 @@
 .catalog-extra-products {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .catalog-extra-products__wrapper {
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +26,7 @@
   background-color: #ffffff;
   width: fit-content;
   max-width: 85%;
-  margin: 0 0 32px;
+  margin: 0 0 35px;
   font-family: $primary-font;
   font-size: 24px;
   font-style: normal;
@@ -35,8 +39,8 @@
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 66px;
-    margin-left: 40px;
+    margin-bottom: 80px;
+    margin-left: 50px;
     padding-left: 20px;
     padding-right: 40px;
     width: fit-content;
@@ -44,8 +48,10 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 70px;
+    margin-bottom: 80px;
     font-size: 40px;
     line-height: 40px;
+    padding-left: 40px;
   }
 }
 
