@@ -1,3 +1,4 @@
+
 .main-header {
   font-family: $primary-font;
 
@@ -115,6 +116,13 @@
 .main-header__wrapper--opened .main-header__main-nav {
   @media (max-width: $mobile-only) {
     display: block;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 10;
+    min-width: 320px;
+    width: 100%;
+    background-color: #ffffff;
   }
 }
 
