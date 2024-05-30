@@ -1,7 +1,7 @@
 .catalog {
   padding: 0 20px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px 70px;
@@ -19,11 +19,11 @@
   font-size: 36px;
   line-height: 36px;
   color: $title-color;
-  margin-top: 26px;
+  margin-top: 28px;
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 84px;
+    padding: 73px 0 84px;
     margin: 0;
     font-size: 60px;
     line-height: 60px;
@@ -40,6 +40,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
+    row-gap: 56px;
   }
 
   @media (min-width: $desktop-width) {

@@ -13,6 +13,8 @@
     min-width: 436px;
     flex-wrap: wrap;
     gap: 33px;
+    justify-content: end;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {

@@ -2,12 +2,12 @@
   list-style-type: none;
   min-width: 280px;
   margin: 0;
-  padding: 0 0 38px;
+  padding: 0 0 34px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid #cdcdcd;
     padding: 0;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
     width: 708px;
   }
 
@@ -69,12 +69,12 @@
 .catalog-extra-products-list__button {
   margin: 0;
   margin-top: 15px;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
   min-width: 280px;
 
   @media (min-width: $tablet-width) {
     min-width: 632px;
-    margin-top: 25px;
+    margin-top: 24px;
   }
 
   @media (min-width: $desktop-width) {

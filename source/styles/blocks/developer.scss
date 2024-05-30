@@ -1,26 +1,23 @@
-.developer {
+.developer__text {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   color: $base-color-text;
   text-decoration: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 140px;
   padding-top: 20px;
+
 
   @media (min-width: $tablet-width) {
     gap: 23px;
-    padding-top: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 0;
+    padding: 0;
   }
 }
 
-.developer__icon::after {
+.developer__text::after {
   content: "";
   display: block;
   width: 27px;
@@ -31,14 +28,16 @@
   mask-position: center;
 }
 
-.developer__icon:hover::after {
+.developer__text:hover::after {
   background-color: $bg-basic-green;
 }
 
-.developer__icon:focus-visible::after {
+
+.developer__text:focus-visible::after {
   background-color: $bg-basic-green;
 }
 
-.developer__icon:active::after {
+.developer__text:active,
+.developer__text:active::after {
   opacity: 0.3;
 }

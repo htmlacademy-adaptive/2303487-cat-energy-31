@@ -26,6 +26,7 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 60px 70px;
+    background-color: #f2f2f2;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +34,7 @@
     width: 565px;
     min-height: 199px;
     background-color: #ffffff;
-    padding: 60px 80px 60px 78px;
+    padding: 53px 80px 59px 78px;
     z-index: 2;
   }
 }
@@ -96,7 +97,7 @@
     width: auto;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     text-align: start;
   }
 }
@@ -114,7 +115,7 @@
     text-align: right;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     text-align: start;
   }
 }
