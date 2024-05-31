@@ -1,0 +1,255 @@
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ebebeb;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 37px 45px;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    min-height: 429px;
+    width: 324px;
+    border-bottom: none;
+    background-image: linear-gradient(to bottom, #ffffff 81px, #ffffff 81px, #f2f2f2 81px);
+    box-sizing: border-box;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 38px 40px;
+    width: 245px;
+    flex-wrap: nowrap;
+    min-height: auto;
+  }
+}
+
+
+.card:first-child {
+  border-top: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    border-top: 0;
+  }
+}
+
+.card--show-more {
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    background-image: none;
+    border: 2px solid #f2f2f2;
+    padding: 50px 37px 40px;
+    margin-top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 430px;
+    padding: 0 38px 40px;
+  }
+}
+
+.card--show-more .card__title::before {
+  content: "";
+  display: inherit;
+  margin: 5px auto 25px;
+  mask-image: url("../../icons/stack.svg#card-plus");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: #d3d3d3;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 50px;
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 46px auto 38px;
+  }
+}
+
+.card__link-image {
+  padding-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 2px;
+    width: 200px;
+    height: 210px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+    width: 169px;
+  }
+}
+
+.card__info-wrapper {
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: flex;
+  }
+}
+
+.card__title {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $card-title-color;
+  text-transform: uppercase;
+  max-width: 80px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 135px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+}
+
+.card__title--more {
+  max-width: 204px;
+  padding-top: 16px;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 22px;
+    max-width: 134px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+  }
+}
+
+.card__table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-color-text;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
+}
+
+.card__table-body {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.card__table-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-color-text;
+  margin: 0;
+
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(68, 68, 68, 1);
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(68, 68, 68, 1);
+  }
+}
+
+.card__table-item,
+.card__table-item-desc {
+  padding: 0;
+  margin: 0;
+}
+
+.card__button {
+  margin: 0;
+  margin-bottom: 24px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    margin: 0;
+    margin-top: auto;
+  }
+}
+
+.card__button--secondary {
+  background-color: rgba(242, 242, 242, 1);
+  color: $base-color-text-grey;
+}
+
+.card__button--secondary:hover,
+.card__button--secondary:active {
+  background-color: #ebebeb;
+}
+
+.card__description {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-family: $secondary-font;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 0;
+    max-width: 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+  }
+}

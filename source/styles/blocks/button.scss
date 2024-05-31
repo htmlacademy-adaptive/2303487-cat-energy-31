@@ -1,0 +1,23 @@
+.button {
+  background-color: $bg-basic-green;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 10px;
+  margin: 20px;
+  display: block;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}

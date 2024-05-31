@@ -1,0 +1,36 @@
+.logotype {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding-top: 13px;
+  margin-left: 20px;
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: 30px;
+    padding: 0;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 25px;
+  }
+}
+
+
+.logotype__graphic-logo,
+.logotype__text-logo {
+  display: block;
+}

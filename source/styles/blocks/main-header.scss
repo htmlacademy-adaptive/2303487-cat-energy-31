@@ -1,0 +1,130 @@
+.main-header {
+  font-family: $primary-font;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 34px 0 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 0;
+    min-width: 1220px;
+    margin-top: 0;
+  }
+
+  &--catalog {
+    @media (min-width: $desktop-width) {
+      z-index: 1;
+      background-image: none;
+      max-width: none;
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+  }
+}
+
+.main-header__main-nav {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 0;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 32px;
+    margin: 0;
+    width: 1220px;
+  }
+}
+
+.main-header__logo {
+  gap: 56px;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
+}
+
+.main-header__toggle {
+  position: absolute;
+  top: 20px;
+  right: 21px;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url("../../icons/stack.svg#main-nav-mobile-menu-open");
+  cursor: pointer;
+  border: none;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+
+.main-header__toggle:hover {
+  opacity: 0.8;
+}
+
+.main-header__toggle:hover::after {
+  opacity: 0.6;
+}
+
+
+.main-header__wrapper--nojs .main-header__main-nav {
+  @media (max-width: $mobile-only) {
+    display: block;
+    position: static;
+    min-height: auto;
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+.main-header__wrapper--nojs .main-header__toggle {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+}
+
+.main-header__wrapper--opened .main-header__main-nav {
+  @media (max-width: $mobile-only) {
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 10;
+    min-width: 320px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+}
+
+.main-header__wrapper--opened .main-header__toggle {
+  @media (max-width: $mobile-only) {
+    background-image: url("../../icons/stack.svg#main-nav-mobile-menu-close");
+  }
+}

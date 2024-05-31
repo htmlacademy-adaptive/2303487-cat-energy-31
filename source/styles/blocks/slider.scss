@@ -1,0 +1,113 @@
+.slider {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 75px;
+  }
+}
+
+.slider__compare--before {
+  width: 140px;
+  overflow: hidden;
+  grid-column: 1 / 1;
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+  }
+}
+
+.slider__compare--after {
+  grid-column: 2 / 2;
+  width: 140px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+  }
+}
+
+.slider__item--thin {
+  transform: translateX(-50%);
+}
+
+.slider__toggle {
+  cursor: pointer;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+  max-height: 512px;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 137px;
+
+  &:hover {
+    background-color: $bg-basic-green;
+  }
+
+  &:active {
+    background-color: rgba(94, 170, 47, 1);
+  }
+
+  &::before {
+    content: "";
+    background-color: #ffffff;
+    border: 2px solid #666666;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    background-color: #666666;
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: url("../../icons/stack.svg#slider-button");
+    mask-position: 50%;
+    mask-size: 24px 18px;
+    mask-repeat: no-repeat;
+    z-index: 3;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 270px;
+  }
+}
+
+.slider__toggle:hover::before {
+  color: $bg-basic-green;
+  border: 2px solid $bg-basic-green;
+}
+
+.slider__toggle:active::before {
+  border: 2px solid rgba(94, 170, 47, 1);
+}
+
+.slider__toggle:hover::after {
+  background-color: $bg-basic-green;
+}
+
+.slider__toggle:active::after {
+  background-color: rgba(94, 170, 47, 1);
+}
