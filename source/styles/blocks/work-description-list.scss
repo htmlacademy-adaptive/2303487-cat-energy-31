@@ -13,6 +13,11 @@
     row-gap: 100px;
     counter-reset: list 0;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    gap: 74px;
+  }
 }
 
 .work-description-list__item {

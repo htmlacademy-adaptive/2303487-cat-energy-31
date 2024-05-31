@@ -48,9 +48,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 200px;
+    justify-content: flex-start;
   }
 }
 
 .main-footer__logotype-text-logo {
   display: block;
+  max-width: 100%;
 }

@@ -8,7 +8,6 @@
       url("../../images/offer-background-mobile@2x.png") 2x type("image/png"),
       url("../../images/offer-background-mobile@1x.png") 1x type("image/png"));
   background-repeat: no-repeat;
-  background-size: cover, auto;
   padding: 60px 59px 43px;
 
   @media (min-width: $tablet-width) {
@@ -37,6 +36,7 @@
         url("../../images/offer-background-desktop@1x.webp") 1x type("image/webp"),
         url("../../images/offer-background-desktop@2x.png") 2x type("image/png"),
         url("../../images/offer-background-desktop@1x.png") 1x type("image/png"));
+    background-size: 100%;
   }
 }
 

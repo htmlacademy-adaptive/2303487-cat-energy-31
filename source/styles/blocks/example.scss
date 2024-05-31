@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: #ffffff;
-    background-image: (linear-gradient #ffffff 30%, #f2f2f2 30%);
+    background-image: linear-gradient (#ffffff 30%, #f2f2f2 30%);
     padding: 0;
   }
 }
@@ -91,6 +91,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 72px;
+    row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
