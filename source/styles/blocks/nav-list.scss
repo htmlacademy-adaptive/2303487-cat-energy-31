@@ -9,8 +9,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0;
-    margin-right: 34px;
-    margin-left: 34px;
+    margin-right: 36px;
+    margin-left: 36px;
     min-width: 436px;
     flex-wrap: wrap;
     gap: 33px;
@@ -23,6 +23,8 @@
     justify-content: end;
     align-items: center;
     display: flex;
+    gap: unset;
+    margin: 0;
     margin-top: 25px;
   }
 }
@@ -41,6 +43,8 @@
   @media (min-width: $desktop-width) {
     border: none;
     padding: 0;
+    margin-left: 33px;
+    margin-bottom: 12px;
   }
 }
 

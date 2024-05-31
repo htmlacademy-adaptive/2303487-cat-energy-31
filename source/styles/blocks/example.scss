@@ -6,7 +6,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 42px 30px 101px;
+    padding: 42px 30px 90px;
     background-color: #ffffff;
     background-image: linear-gradient(to top, #eaeaea 468px, #ffffff 462px);
   }
@@ -96,6 +96,7 @@
 
   @media (min-width: $desktop-width) {
     gap: 60px;
+    row-gap: 55px;
     margin: 0;
   }
 }

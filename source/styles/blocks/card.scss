@@ -6,7 +6,7 @@
   align-items: flex-start;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 37px 42px;
+    padding: 10px 37px 45px;
     flex-flow: column nowrap;
     justify-content: stretch;
     min-height: 429px;
@@ -44,11 +44,12 @@
     background-image: none;
     border: 2px solid #f2f2f2;
     padding: 50px 37px 40px;
-    margin-top: 83px;
+    margin-top: 82px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 430px;
+    padding: 0 38px 40px;
   }
 }
 
@@ -71,7 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 38px;
+    margin: 46px auto 38px;
   }
 }
 
@@ -111,8 +112,8 @@
   color: $card-title-color;
   text-transform: uppercase;
   max-width: 80px;
-  padding-top: 19px;
-  padding-bottom: 12px;
+  padding-top: 20px;
+  padding-bottom: 15px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -128,7 +129,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     padding: 0;
   }
 }
@@ -143,6 +144,10 @@
     margin-bottom: 22px;
     max-width: 134px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .card__table {
@@ -151,10 +156,10 @@
   font-size: 12px;
   line-height: 16px;
   color: $base-color-text;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -239,12 +244,12 @@
     font-size: 16px;
     line-height: 18px;
     text-align: center;
-    margin-bottom: 86px;
+    margin-bottom: 80px;
     margin-top: 0;
     max-width: 170px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 96px;
+    margin-bottom: 90px;
   }
 }
