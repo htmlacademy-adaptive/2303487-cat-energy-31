@@ -26,11 +26,11 @@
   width: 320px;
   margin: 0 auto;
   padding: 26px 20px;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 60px 70px;
-    background-color: #f2f2f2;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +40,14 @@
     background-color: #ffffff;
     padding: 62px 80px 59px 78px;
     z-index: 2;
+  }
+}
+
+.office-location-map__wrapper--catalog {
+  background-color: rgba(242, 242, 242, 1);
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
   }
 }
 

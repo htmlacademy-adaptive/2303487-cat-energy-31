@@ -30,6 +30,13 @@
   }
 }
 
+.logotype__text-logo {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
 
 .logotype__graphic-logo,
 .logotype__text-logo {
