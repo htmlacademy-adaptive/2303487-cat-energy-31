@@ -7,6 +7,12 @@
   margin: 0 auto 20px;
 }
 
+.main-container--catalog {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 71px;
+  }
+}
+
 .main-container__work-description {
   width: 100%;
   margin: 0 auto 49px;
