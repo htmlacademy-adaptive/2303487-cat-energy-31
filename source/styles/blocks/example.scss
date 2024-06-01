@@ -3,17 +3,17 @@
   padding: 0 20px;
   padding-bottom: 35px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 42px 30px 90px;
+    padding: 42px 30px 100px;
     background-color: #ffffff;
-    background-image: linear-gradient(to top, #eaeaea 468px, #ffffff 462px);
+    background-image: linear-gradient(to top, #eaeaea 449px, #ffffff 4px);
   }
 
   @media (min-width: $desktop-width) {
     background-color: #ffffff;
-    background-image: linear-gradient (#ffffff 30%, #f2f2f2 30%);
+    background-image: linear-gradient(to top, #eaeaea 459px, #ffffff 4px);
     padding: 0;
   }
 }
@@ -48,7 +48,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     padding-top: 2px;
   }
 

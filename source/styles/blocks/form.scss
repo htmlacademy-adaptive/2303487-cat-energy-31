@@ -4,11 +4,12 @@
     flex-direction: row;
     justify-content: center;
     min-width: 632px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 752px;
+    padding-left: 220px;
   }
 }
 

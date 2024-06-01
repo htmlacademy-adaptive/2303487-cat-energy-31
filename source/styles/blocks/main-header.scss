@@ -1,5 +1,6 @@
 .main-header {
   font-family: $primary-font;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding: 25px 34px 0 0;
@@ -12,7 +13,7 @@
     padding-right: 110px;
     padding-top: 0;
     min-width: 1220px;
-    margin-top: 0;
+    margin: 0;
   }
 
   &--catalog {

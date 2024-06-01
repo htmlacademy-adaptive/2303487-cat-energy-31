@@ -53,6 +53,16 @@
   }
 }
 
+.main-footer__logotype-link:hover,
+.main-footer__logotype-link:focus-visible {
+  opacity: 80%;
+}
+
+.main-footer__logotype-link:active {
+  opacity: 60%;
+}
+
+
 .main-footer__logotype-text-logo {
   display: block;
   max-width: 100%;
