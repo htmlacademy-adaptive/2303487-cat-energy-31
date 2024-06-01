@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   border-bottom: 1px solid #ebebeb;
   align-items: flex-start;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding: 10px 37px 45px;
@@ -93,6 +94,15 @@
   }
 }
 
+.card__link-image:hover,
+.card__link-image:focus-visible {
+  opacity: 60%;
+}
+
+.card__link-image:active {
+  opacity: 30%;
+}
+
 .card__info-wrapper {
   width: 140px;
 
@@ -132,6 +142,15 @@
     margin-bottom: 25px;
     padding: 0;
   }
+}
+
+.card__title:hover,
+.card__title:focus-visible {
+  opacity: 60%;
+}
+
+.card__title:active {
+  opacity: 30%;
 }
 
 .card__title--more {

@@ -3,14 +3,16 @@
   list-style-type: none;
   text-align: center;
   min-width: 320px;
-  margin-bottom: 0;
+  margin: 0;
 
 
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0;
-    margin-right: 36px;
-    margin-left: 36px;
+    /* margin-right: 36px;
+    margin-left: 36px; */
+    padding-right: 36px;
+    padding-left: 36px;
     min-width: 436px;
     flex-wrap: wrap;
     gap: 33px;
@@ -25,7 +27,9 @@
     display: flex;
     gap: unset;
     margin: 0;
-    margin-top: 25px;
+    /* margin-top: 25px; */
+    padding: 0;
+    padding-top: 30px;
   }
 }
 
