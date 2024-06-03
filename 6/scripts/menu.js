@@ -1,0 +1,1 @@
+var e=document.querySelector(".main-header__wrapper"),a=document.querySelector(".main-header__toggle");e.classList.remove("main-header__wrapper--nojs");a.onclick=function(){e.classList.toggle("main-header__wrapper--opened")};
